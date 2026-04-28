@@ -435,12 +435,11 @@ body {
 }
 
 /* =========================================
-   5. VERTICAL STACKING SERVICES SECTION (Image matching UI + Animation)
+   5. VERTICAL STACKING SERVICES SECTION (nebs-it.com UI matching)
    ========================================= */
 .stacking-section {
     padding: 120px 5%;
     background: #ffffff;
-    /* ইমেজের মতো ক্লিন হোয়াইট ব্যাকগ্রাউন্ড */
 }
 
 .stacking-header {
@@ -468,32 +467,30 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    /* কার্ড জমার আগে মাঝের গ্যাপ */
     padding-bottom: 80px;
 }
 
-/* Base Card Style matching your image */
+/* Base Card Style matching the video */
 .stack-card {
     display: flex;
     align-items: center;
     gap: 50px;
     background: #ffffff;
-    padding: 40px;
-    /* ইমেজের মতো চারপাশে পারফেক্ট প্যাডিং */
-    border-radius: 20px;
-    border: 1px solid #e2e8f0;
-    /* আপনার ইমেজের মতো হালকা বর্ডার */
+    padding: 50px;
+    border-radius: 24px;
+    /* ভিডিওর মতো একটি হালকা কালারফুল বর্ডার (Cyan Tint) */
+    border: 3px solid rgba(14, 165, 233, 0.08);
 
-    /* Sticky Stacking Magic */
     position: sticky;
-    height: 500px;
+    height: 600px;
+    /* কন্টেন্ট বেশি হওয়ায় হাইট বাড়ানো হয়েছে */
+    box-sizing: border-box;
 
-    /* ওপরের দিকে শ্যাডো, যাতে একটার ওপর আরেকটা বসার সময় বোঝা যায় */
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.02);
     transition: all 0.4s ease;
 }
 
-/* Stacking Offsets (কার্ডগুলো কোথায় গিয়ে আটকাবে) */
+/* Stacking Offsets */
 .stack-card:nth-child(1) {
     top: 120px;
     z-index: 1;
@@ -514,97 +511,167 @@ body {
     z-index: 4;
 }
 
+.stack-card:hover {
+    border-color: rgba(14, 165, 233, 0.3);
+    box-shadow: 0 10px 40px rgba(14, 165, 233, 0.08);
+}
+
 /* Left Content UI */
 .stack-card-content {
-    flex: 1;
+    flex: 1.1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 20px;
 }
 
-/* আইকনের কালার আপনার ইমেজের সায়ান/ব্লু কালারের মতো করা হয়েছে */
-.sc-icon {
-    font-size: 2.5rem;
-    color: #0ea5e9;
-    margin-bottom: 20px;
-    line-height: 1;
-}
-
-.stack-card-content h3 {
-    font-size: 2.2rem;
-    color: #1e293b;
-    /* ডার্ক টাইটেল */
-    margin-bottom: 15px;
+/* Brand Badge */
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
 }
 
-.sc-desc {
-    color: #64748b;
-    /* হালকা ছাই রঙ */
+.badge-icon {
+    font-size: 1.2rem;
+}
+
+/* Heading & Paragraph */
+.card-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.card-paragraph {
     font-size: 1.05rem;
+    color: var(--text-muted);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    max-width: 95%;
 }
 
-/* Features List matching your image (line breaks) */
-.sc-features {
-    list-style: none;
+/* Price Section */
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 3px solid var(--border-color);
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.price-label {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.price-value {
+    color: var(--text-main);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+/* Offer Alert Box */
+.offer-alert {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(14, 165, 233, 0.05);
+    /* হালকা সায়ান ব্যাকগ্রাউন্ড */
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-radius: 8px;
+    padding: 12px 15px;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.sc-features li {
-    padding: 15px 0;
-    border-top: 1px solid #f1f5f9;
-    /* ইমেজের মতো ওপরের বর্ডার */
-    color: #334155;
-    font-weight: 600;
-    font-size: 0.95rem;
+.offer-alert p {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.offer-alert strong {
+    color: var(--accent);
+}
+
+/* Feature Pills (ভিডিওর ছোট ছোট বাটনগুলো) */
+.feature-pills {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
 }
 
-.sc-features li:last-child {
-    border-bottom: 1px solid #f1f5f9;
-    /* ইমেজের মতো নিচের বর্ডার */
+.feature-pills span {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: 0.3s;
 }
 
-.sc-features li::before {
-    content: '→';
-    /* ইমেজের মতো অ্যারো */
-    color: #0ea5e9;
-    /* অ্যারোর কালার */
-    margin-right: 15px;
-    font-weight: normal;
-    font-size: 1.1rem;
+.feature-pills span:hover {
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
-/* Button matching your image (Rounded rectangle, not pill) */
-.sc-btn {
-    background: #0ea5e9;
-    color: #ffffff;
-    padding: 12px 24px;
-    border-radius: 6px;
-    /* ইমেজের মতো সামান্য গোল কর্নার */
-    text-decoration: none;
+.feature-pills .more-pill {
+    background: var(--bg-light);
+    color: var(--primary);
     font-weight: 600;
-    font-size: 1rem;
+    border-color: transparent;
+}
+
+/* Explore Button with Circular Icon */
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.explore-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     transition: 0.3s ease;
 }
 
-.sc-btn:hover {
-    background: #0284c7;
-    transform: translateY(-2px);
+.explore-btn:hover {
+    color: var(--accent);
+}
+
+.explore-btn:hover .explore-icon {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
 }
 
 /* Right Image UI */
 .stack-card-image {
-    flex: 1.2;
+    flex: 1;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -612,12 +679,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
 .stack-card:hover .stack-card-image img {
-    transform: scale(1.03);
-    /* ইমেজে খুব স্মুথ একটি জুম */
+    transform: scale(1.05);
 }
 
 /* Responsive */
@@ -625,17 +691,19 @@ body {
     .stack-card {
         flex-direction: column;
         height: auto;
-        padding: 30px;
-        gap: 30px;
+        padding: 40px 30px;
+        gap: 40px;
         position: relative;
-        /* মোবাইলে নরমাল স্ক্রল */
         top: 0 !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
 
     .stack-card-image {
         width: 100%;
-        height: 250px;
+        height: 300px;
+    }
+
+    .card-heading {
+        font-size: 2rem;
     }
 }
 
