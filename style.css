@@ -888,7 +888,127 @@ body {
 }
 
 /* =========================================
-   7. TECH STACK & FOOTER
+   7. WORKING PROCESS SECTION
+   ========================================= */
+.process-section {
+    padding: 120px 5%;
+    background: var(--bg-main);
+}
+
+.process-container {
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Vertical Line */
+.process-line {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+    z-index: 1;
+}
+
+/* Step Wrapper */
+.process-step {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Step Number Ball */
+.step-number {
+    width: 62px;
+    height: 62px;
+    background: var(--bg-main);
+    border: 2px solid var(--accent);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 8px var(--bg-main);
+    transition: all 0.4s ease;
+}
+
+.process-step:hover .step-number {
+    background: var(--accent);
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+}
+
+/* Step Content Box */
+.step-content {
+    padding-top: 10px;
+}
+
+.step-content h3 {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.step-content p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Step Sub-list */
+.step-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.step-list li {
+    background: var(--bg-light);
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .process-line {
+        left: 20px;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .process-step {
+        gap: 25px;
+    }
+
+    .step-content h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* =========================================
+   8. TECH STACK & FOOTER
    ========================================= */
 .section-header {
     text-align: center;
