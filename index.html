@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Solution Ltd | Digital Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero-section">
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container hero-content">
+            <nav class="pill-nav" id="navbar">
+                <div class="nav-brand">
+                    <span class="logo-icon">💠</span>
+                    <span class="brand-text">Express Solution</span>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- <li class="dropdown"><a href="#">Our Ventures <span class="chevron">▾</span></a></li> -->
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#contact" class="btn-contact">Appointment <span class="arrow-up">↗</span></a>
+                    <!-- <button class="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button> -->
+                </div>
+            </nav>
+
+            <!-- <div class="floating-trust-badge">
+                <div class="avatars">
+                    <img src="https://via.placeholder.com/30" alt="User">
+                    <img src="https://via.placeholder.com/30" alt="User">
+                    <img src="https://via.placeholder.com/30" alt="User">
+                </div>
+                <span>Trusted by 30 World Wide Clients</span>
+            </div> -->
+
+            <h1 class="hero-title">Elevate Your Brand's <br><span class="italic-text">Future Identity</span></h1>
+            <p class="hero-desc">We help brands worldwide design, build, and grow a strong digital presence that serves
+                real results.</p>
+
+            <a href="#contact" class="btn-cta">
+                <span class="arrow-up-dark">↗</span> Free Consultation
+            </a>
+
+            <div class="social-follow">
+                <span class="follow-text">Follow Us On</span>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">in</a>
+                    <a href="#">X</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-brand-card">
+            <div class="brand-header-minimal">
+                <span class="line"></span>
+                <p>Trusted by Innovative Enterprises</p>
+                <span class="line"></span>
+            </div>
+
+            <div class="bottom-marquee-container">
+                <div class="bottom-marquee-track">
+                    <h3 class="mock-logo">VIDEVO</h3>
+                    <h3 class="mock-logo">Microsoft</h3>
+                    <h3 class="mock-logo">PayPal</h3>
+                    <h3 class="mock-logo">Google</h3>
+                    <h3 class="mock-logo">WEPIK</h3>
+
+                    <h3 class="mock-logo">VIDEVO</h3>
+                    <h3 class="mock-logo">Microsoft</h3>
+                    <h3 class="mock-logo">PayPal</h3>
+                    <h3 class="mock-logo">Google</h3>
+                    <h3 class="mock-logo">WEPIK</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section class="recognition-section reveal">
+        <div class="container">
+            <div class="recognition-header">
+                <p class="sub-title">Recognition & Partnerships</p>
+                <h2 class="main-title">Trusted by Innovative Companies</h2>
+            </div>
+
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=TechCorp" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=GlobalFin" alt="Logo">
+                    </div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=EduSmart" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=HealthPlus" alt="Logo">
+                    </div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=CloudNet" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=NextGen" alt="Logo"></div>
+
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=TechCorp" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=GlobalFin" alt="Logo">
+                    </div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=EduSmart" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=HealthPlus" alt="Logo">
+                    </div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=CloudNet" alt="Logo"></div>
+                    <div class="logo-item"><img src="https://via.placeholder.com/150x60?text=NextGen" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="services" class="stacking-section container">
+
+        <div class="stacking-header">
+            <h2 class="editorial-title">Architecting Digital Scale.</h2>
+            <p class="editorial-desc">We build the technical infrastructure, high-end applications, and growth systems
+                for your enterprise.</p>
+        </div>
+
+        <div class="cards-container">
+
+            <div class="stack-card">
+                <div class="stack-card-content">
+                    <div class="sc-icon">🌐</div>
+                    <h3>Enterprise Web Architecture</h3>
+                    <p class="sc-desc">Building highly scalable, secure, and lightning-fast web applications utilizing
+                        the MERN stack.</p>
+                    <ul class="sc-features">
+                        <li>Custom SaaS Development</li>
+                        <li>High-Volume E-Commerce</li>
+                        <li>Secure Portals & Dashboards</li>
+                    </ul>
+                    <a href="#contact" class="sc-btn">Explore Service</a>
+                </div>
+                <div class="stack-card-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Web Architecture">
+                </div>
+            </div>
+
+            <div class="stack-card">
+                <div class="stack-card-content">
+                    <div class="sc-icon">📱</div>
+                    <h3>Mobile Engineering</h3>
+                    <p class="sc-desc">Native and cross-platform mobile applications delivering seamless user
+                        experiences and robust backend synchronization.</p>
+                    <ul class="sc-features">
+                        <li>iOS & Android Apps</li>
+                        <li>Fintech & On-Demand Systems</li>
+                        <li>UI/UX Prototyping</li>
+                    </ul>
+                    <a href="#contact" class="sc-btn">Explore Service</a>
+                </div>
+                <div class="stack-card-image">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Mobile Apps">
+                </div>
+            </div>
+
+            <div class="stack-card">
+                <div class="stack-card-content">
+                    <div class="sc-icon">📈</div>
+                    <h3>Performance Marketing</h3>
+                    <p class="sc-desc">Precision-targeted campaigns, technical SEO, and conversion rate optimization
+                        designed to maximize your ROI.</p>
+                    <ul class="sc-features">
+                        <li>Data-Driven Ad Campaigns</li>
+                        <li>Technical SEO Strategy</li>
+                        <li>B2B Lead Generation</li>
+                    </ul>
+                    <a href="#contact" class="sc-btn">Explore Service</a>
+                </div>
+                <div class="stack-card-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Marketing">
+                </div>
+            </div>
+
+            <div class="stack-card">
+                <div class="stack-card-content">
+                    <div class="sc-icon">🤖</div>
+                    <h3>Business Automation</h3>
+                    <p class="sc-desc">Replacing manual bottlenecks with automated workflows. We integrate custom bots
+                        and CRM synchronization for 24/7 efficiency.</p>
+                    <ul class="sc-features">
+                        <li>Custom WhatsApp Chatbots</li>
+                        <li>n8n & Zapier Workflows</li>
+                        <li>ERP & CRM Integrations</li>
+                    </ul>
+                    <a href="#contact" class="sc-btn">Explore Service</a>
+                </div>
+                <div class="stack-card-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Automation">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="portfolio-section container reveal">
+        <div class="section-header">
+            <span class="pill-badge">Our Work</span>
+            <h2>Featured Case Studies</h2>
+            <p>Real results driven by strategic engineering and data-backed marketing.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Dashboard Project">
+                    <div class="portfolio-overlay">
+                        <span class="metric">+150% ROI</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tags">
+                        <span>Web App</span>
+                        <span>React</span>
+                    </div>
+                    <h3>Fintech Analytics Dashboard</h3>
+                    <p>Architected a high-performance MERN stack dashboard for real-time financial tracking and
+                        automated ledger management.</p>
+                    <a href="#" class="case-study-link">Read Case Study <span class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Marketing Project">
+                    <div class="portfolio-overlay">
+                        <span class="metric">10k+ Leads</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tags">
+                        <span>Marketing</span>
+                        <span>Automation</span>
+                    </div>
+                    <h3>Global B2B Lead Generation</h3>
+                    <p>Deployed a data-driven Meta ads campaign integrated with n8n WhatsApp bots, automating the entire
+                        lead nurturing pipeline.</p>
+                    <a href="#" class="case-study-link">Read Case Study <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section container reveal">
+        <div class="section-header">
+            <h2>Technologies We Master</h2>
+        </div>
+        <div class="tech-pills">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Flutter</span>
+            <span class="tech-pill">AWS</span>
+            <span class="tech-pill">Google Ads</span>
+            <span class="tech-pill">Meta Graph API</span>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer-section">
+        <div class="container footer-content reveal">
+            <h2>Ready to transform your digital presence?</h2>
+            <p>Let's discuss your project requirements and build something extraordinary.</p>
+            <a href="mailto:hello@expresssolution.com" class="btn-primary large-btn">hello@expresssolution.com</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Express Solution Ltd. Built for the future.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
