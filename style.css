@@ -105,7 +105,8 @@ body {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 9999;
+    /* এটি 2 ছিল, এখন 9999 করে দিন */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -128,7 +129,8 @@ body {
     flex-wrap: nowrap;
     box-shadow: 0 15px 35px rgba(25, 30, 68, 0.1);
     position: relative;
-    z-index: 100;
+    z-index: 9999;
+    /* এটি 100 ছিল, এখন 9999 করে দিন */
     transition: var(--transition);
 }
 
@@ -137,6 +139,8 @@ body {
     top: 10px;
     width: 95%;
     margin: 0 auto;
+    z-index: 9999;
+    /* এখানে এই লাইনটি নতুন করে যুক্ত করে দিন */
 }
 
 .nav-brand {
@@ -151,6 +155,7 @@ body {
     font-weight: 700;
     color: var(--primary);
     letter-spacing: -0.5px;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -1474,5 +1479,15 @@ body {
 
     .hamburger-menu.active .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+        /* মোবাইলে এক লাইনে জায়গা পাওয়ার জন্য সাইজ সামান্য কমানো হলো */
+    }
+
+    .nav-brand {
+        gap: 8px;
+        /* আইকন এবং লেখার মাঝখানের গ্যাপ সামান্য কমানো হলো */
     }
 }
