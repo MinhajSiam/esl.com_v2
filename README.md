@@ -1,10 +1,10 @@
-# Express Solution Ltd. - Corporate Agency Website 🌐
+# Express Solution Ltd. - Corporate Agency Website
 
 > A highly professional, premium, and fully responsive corporate website built for a top-tier digital IT solutions agency. 
 
 ![Express Solution Preview](./preview.png)
 
-## 🚀 Key Features
+## Key Features
 
 This project incorporates modern web design trends and advanced CSS architectures to deliver a seamless user experience:
 
@@ -16,7 +16,7 @@ This project incorporates modern web design trends and advanced CSS architecture
 * **Fully Responsive Design:** Pixel-perfect adaptations for tablets and mobile devices, including a smooth animated Hamburger Dropdown Menu.
 * **Modern Mega Footer:** A detailed, multi-column footer with a strong Call-To-Action (CTA) section.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 This landing page is built with core web technologies, ensuring maximum performance and zero dependency overhead:
 
@@ -24,7 +24,7 @@ This landing page is built with core web technologies, ensuring maximum performa
 * **CSS3:** Advanced styling using CSS Variables, Flexbox, CSS Grid, animations (`@keyframes`), and `position: sticky`.
 * **Vanilla JavaScript:** Lightweight DOM manipulation for the sticky navbar, smooth scroll reveal (`IntersectionObserver`), and mobile menu toggling.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 express-solution-website/
