@@ -2,7 +2,7 @@
 
 > A highly professional, premium, and fully responsive corporate website built for a top-tier digital IT solutions agency. 
 
-![Express Solution Preview](https://via.placeholder.com/1200x600/15193c/38bdf8?text=Express+Solution+Ltd+-+Digital+Excellence)
+![Express Solution Preview](./preview.png)
 
 ## 🚀 Key Features
 
