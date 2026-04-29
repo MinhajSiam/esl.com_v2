@@ -435,7 +435,7 @@ body {
 }
 
 /* =========================================
-   5. VERTICAL STACKING SERVICES SECTION (nebs-it.com UI matching)
+   5. VERTICAL STACKING SERVICES SECTION
    ========================================= */
 .stacking-section {
     padding: 120px 5%;
@@ -470,7 +470,6 @@ body {
     padding-bottom: 80px;
 }
 
-/* Base Card Style matching the video */
 .stack-card {
     display: flex;
     align-items: center;
@@ -478,19 +477,14 @@ body {
     background: #ffffff;
     padding: 50px;
     border-radius: 24px;
-    /* ভিডিওর মতো একটি হালকা কালারফুল বর্ডার (Cyan Tint) */
     border: 3px solid rgba(14, 165, 233, 0.08);
-
     position: sticky;
     height: 600px;
-    /* কন্টেন্ট বেশি হওয়ায় হাইট বাড়ানো হয়েছে */
     box-sizing: border-box;
-
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.02);
     transition: all 0.4s ease;
 }
 
-/* Stacking Offsets */
 .stack-card:nth-child(1) {
     top: 120px;
     z-index: 1;
@@ -516,7 +510,6 @@ body {
     box-shadow: 0 10px 40px rgba(14, 165, 233, 0.08);
 }
 
-/* Left Content UI */
 .stack-card-content {
     flex: 1.1;
     display: flex;
@@ -524,7 +517,6 @@ body {
     align-items: flex-start;
 }
 
-/* Brand Badge */
 .brand-badge {
     display: inline-flex;
     align-items: center;
@@ -539,7 +531,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Heading & Paragraph */
 .card-heading {
     font-size: 2.5rem;
     font-weight: 800;
@@ -557,7 +548,6 @@ body {
     max-width: 95%;
 }
 
-/* Price Section */
 .price-section {
     display: flex;
     align-items: center;
@@ -578,13 +568,11 @@ body {
     font-weight: 800;
 }
 
-/* Offer Alert Box */
 .offer-alert {
     display: flex;
     align-items: center;
     gap: 12px;
     background: rgba(14, 165, 233, 0.05);
-    /* হালকা সায়ান ব্যাকগ্রাউন্ড */
     border: 1px solid rgba(14, 165, 233, 0.2);
     border-radius: 8px;
     padding: 12px 15px;
@@ -603,7 +591,6 @@ body {
     color: var(--accent);
 }
 
-/* Feature Pills (ভিডিওর ছোট ছোট বাটনগুলো) */
 .feature-pills {
     display: flex;
     flex-wrap: wrap;
@@ -633,7 +620,6 @@ body {
     border-color: transparent;
 }
 
-/* Explore Button with Circular Icon */
 .explore-btn {
     display: inline-flex;
     align-items: center;
@@ -667,7 +653,6 @@ body {
     box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
 }
 
-/* Right Image UI */
 .stack-card-image {
     flex: 1;
     height: 100%;
@@ -686,7 +671,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive */
 @media (max-width: 960px) {
     .stack-card {
         flex-direction: column;
@@ -708,12 +692,11 @@ body {
 }
 
 /* =========================================
-   6. ULTRA-PREMIUM CASE STUDIES (Overlapping UI)
+   6. ULTRA-PREMIUM CASE STUDIES
    ========================================= */
 .premium-portfolio-section {
     padding: 120px 5%;
     background: #f8fafc;
-    /* চমৎকার কনট্রাস্টের জন্য অফ-হোয়াইট */
 }
 
 .portfolio-header-center {
@@ -725,17 +708,14 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 80px 50px;
-    /* নিচে স্পেস বেশি রাখা হয়েছে ওভারল্যাপিংয়ের জন্য */
 }
 
-/* Card Container */
 .p-card {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-/* Background Image Box */
 .p-image-box {
     position: relative;
     border-radius: 24px;
@@ -755,7 +735,6 @@ body {
     transform: scale(1.06);
 }
 
-/* Floating Tags inside Image */
 .p-tags-overlay {
     position: absolute;
     top: 20px;
@@ -776,17 +755,13 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Overlapping Content Box (The Magic) */
 .p-content-box {
     background: #ffffff;
     padding: 40px;
     border-radius: 20px;
     width: 88%;
-    /* ইমেজের চেয়ে একটু ছোট */
     margin: 0 auto;
-    /* একদম মাঝখানে রাখার জন্য */
     margin-top: -80px;
-    /* ম্যাজিক! ইমেজের ওপর তুলে দেওয়া হয়েছে */
     position: relative;
     z-index: 10;
     border: 1px solid #e2e8f0;
@@ -796,13 +771,10 @@ body {
 
 .p-card:hover .p-content-box {
     transform: translateY(-10px);
-    /* হোভার করলে বক্সটি উপরে উঠবে */
     border-color: rgba(14, 165, 233, 0.3);
     box-shadow: 0 30px 60px rgba(14, 165, 233, 0.1);
-    /* সায়ান গ্লো */
 }
 
-/* Metrics / Data Row */
 .p-metrics {
     display: flex;
     gap: 30px;
@@ -828,7 +800,6 @@ body {
     font-weight: 600;
 }
 
-/* Typography */
 .p-content-box h3 {
     font-size: 1.6rem;
     color: var(--text-main);
@@ -844,7 +815,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Link */
 .p-link {
     display: inline-flex;
     align-items: center;
@@ -870,7 +840,6 @@ body {
     transform: translateX(8px);
 }
 
-/* Responsive */
 @media (max-width: 960px) {
     .premium-p-grid {
         grid-template-columns: 1fr;
@@ -904,7 +873,6 @@ body {
     gap: 80px;
 }
 
-/* Vertical Line */
 .process-line {
     position: absolute;
     left: 30px;
@@ -915,7 +883,6 @@ body {
     z-index: 1;
 }
 
-/* Step Wrapper */
 .process-step {
     display: flex;
     gap: 50px;
@@ -923,7 +890,6 @@ body {
     z-index: 2;
 }
 
-/* Step Number Ball */
 .step-number {
     width: 62px;
     height: 62px;
@@ -948,7 +914,6 @@ body {
     box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
 }
 
-/* Step Content Box */
 .step-content {
     padding-top: 10px;
 }
@@ -968,7 +933,6 @@ body {
     max-width: 600px;
 }
 
-/* Step Sub-list */
 .step-list {
     list-style: none;
     display: flex;
@@ -986,7 +950,6 @@ body {
     border: 1px solid var(--border-color);
 }
 
-/* Responsive for Mobile */
 @media (max-width: 768px) {
     .process-line {
         left: 20px;
@@ -1013,7 +976,6 @@ body {
 .testimonials-section {
     padding: 120px 5%;
     background: #f8fafc;
-    /* প্রসেস সেকশন থেকে আলাদা করার জন্য হালকা ব্যাকগ্রাউন্ড */
 }
 
 .testimonials-grid {
@@ -1023,7 +985,6 @@ body {
     margin-top: 60px;
 }
 
-/* Testimonial Card */
 .testimonial-card {
     background: #ffffff;
     padding: 40px;
@@ -1040,24 +1001,20 @@ body {
 .testimonial-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(14, 165, 233, 0.08);
-    /* আপনার ব্র্যান্ডের সায়ান গ্লো */
     border-color: #cbd5e1;
 }
 
-/* Quote Icon Decoration */
 .quote-icon {
     font-family: serif;
     font-size: 5rem;
     line-height: 0;
     color: rgba(14, 165, 233, 0.15);
-    /* জলছাপের মতো হালকা সায়ান কালার */
     position: absolute;
     top: 50px;
     left: 30px;
     z-index: 1;
 }
 
-/* Review Text */
 .review-text {
     font-size: 1.05rem;
     line-height: 1.8;
@@ -1065,12 +1022,10 @@ body {
     margin-bottom: 30px;
     position: relative;
     z-index: 2;
-    /* কোটেশন আইকনের ওপর টেক্সট রাখার জন্য */
     padding-top: 15px;
     font-style: italic;
 }
 
-/* Client Details Area */
 .client-info {
     display: flex;
     align-items: center;
@@ -1102,7 +1057,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .testimonials-grid {
         grid-template-columns: 1fr;
@@ -1114,7 +1068,7 @@ body {
 }
 
 /* =========================================
-   9. REFINED TECH STACK SECTION (POLISHED UI)
+   9. REFINED TECH STACK SECTION
    ========================================= */
 .tech-master-section {
     padding: 120px 5%;
@@ -1153,20 +1107,17 @@ body {
     font-weight: 400;
 }
 
-/* Tech Master Grid */
 .tech-master-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
 }
 
-/* Base Tech Card Style */
 .tech-card {
     background: #ffffff;
     padding: 40px;
     border-radius: 16px;
     border: 1px solid rgba(25, 30, 68, 0.05);
-    /* সূক্ষ্ম বর্ডার */
     transition: all 0.4s ease;
     text-align: left;
     display: flex;
@@ -1178,12 +1129,9 @@ body {
 .tech-card:hover {
     transform: translateY(-8px);
     border-color: rgba(14, 165, 233, 0.15);
-    /* সায়ান হোভার বর্ডার */
     box-shadow: 0 20px 40px rgba(14, 165, 233, 0.08);
-    /* সায়ান গ্লো */
 }
 
-/* Logo Box */
 .tech-logo-box {
     width: 60px;
     height: 60px;
@@ -1195,16 +1143,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* লোগো পুরো বক্সে ফিট হবে */
     transition: transform 0.3s ease;
 }
 
 .tech-card:hover .tech-logo {
     transform: scale(1.05);
-    /* লোগোতে হালকা জুম */
 }
 
-/* Typography */
 .tech-card h4 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -1220,7 +1165,6 @@ body {
     margin: 0;
 }
 
-/* Responsive adjustements */
 @media (max-width: 768px) {
     .tech-header-center {
         margin-bottom: 50px;
@@ -1240,13 +1184,11 @@ body {
    ========================================= */
 .site-footer {
     background-color: var(--primary);
-    /* আপনার নেভি ব্লু কালার */
     color: #ffffff;
     position: relative;
     overflow: hidden;
 }
 
-/* Top Call-to-Action Section */
 .footer-cta {
     padding: 100px 5%;
     text-align: center;
@@ -1263,14 +1205,12 @@ body {
 
 .cta-container p {
     color: #94a3b8;
-    /* হালকা নীলচে ধূসর */
     font-size: 1.15rem;
     max-width: 650px;
     margin: 0 auto 40px auto;
     line-height: 1.7;
 }
 
-/* Main Footer Grid */
 .footer-main {
     padding: 80px 5% 60px 5%;
 }
@@ -1278,11 +1218,9 @@ body {
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    /* কলামগুলোর আনুপাতিক সাইজ */
     gap: 50px;
 }
 
-/* Brand Column */
 .footer-brand {
     display: flex;
     align-items: center;
@@ -1327,11 +1265,9 @@ body {
 
 .footer-socials a:hover {
     background: var(--accent);
-    /* হোভারে সায়ান কালার */
     transform: translateY(-3px);
 }
 
-/* Other Columns */
 .footer-col h4 {
     color: #ffffff;
     font-size: 1.1rem;
@@ -1360,7 +1296,6 @@ body {
 .footer-links a:hover {
     color: var(--accent);
     transform: translateX(5px);
-    /* হোভার করলে লেখা হালকা ডানে সরবে */
 }
 
 .footer-contact-info li {
@@ -1380,7 +1315,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Footer Bottom (Copyright) */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding: 25px 5%;
@@ -1416,18 +1350,15 @@ body {
     color: #ffffff;
 }
 
-/* Responsive Design for Footer */
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        /* ট্যাবলেটে ২ কলাম */
     }
 }
 
 @media (max-width: 600px) {
     .footer-grid {
         grid-template-columns: 1fr;
-        /* মোবাইলে ১ কলাম */
         gap: 40px;
     }
 
@@ -1438,7 +1369,7 @@ body {
 }
 
 /* =========================================
-   8. ANIMATIONS
+   11. ANIMATIONS
    ========================================= */
 .reveal {
     opacity: 0;
@@ -1449,4 +1380,99 @@ body {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* =========================================
+   12. MOBILE MENU & HAMBURGER STYLING
+   ========================================= */
+.desktop-only {
+    display: flex;
+}
+
+.hamburger-menu {
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1001;
+}
+
+.hamburger-menu .bar {
+    width: 20px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 960px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .pill-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 25px 20px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(25, 30, 68, 0.15);
+        gap: 20px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--bg-light);
+    }
+
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
+
+    /* হ্যামবার্গার আইকনটিকে 'X' (ক্লোজ) আইকনে রূপান্তর করার অ্যানিমেশন */
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
 }
